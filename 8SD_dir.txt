@@ -1,0 +1,415 @@
+opts   :C G N P S 
+
+# Register 20
+rbase 20 2418 360f 3b95
+rbase 20 2434 3b96 41db
+rbase 20 244c 41dc 4774
+rbase 20 252e 4775 4e13
+rbase 20 25cb 4e14 5eb0
+rbase 20 2556 5eb1 ffff
+
+# Register 22
+rbase 22 bbf
+
+# Register 30
+rbase 30 218b 215a 3b99
+rbase 30 2424 3b9a 44d5
+rbase 30 251c 44d6 4fb3
+rbase 30 5062 4fb4 ffff
+
+# Register 32
+rbase 32 75 2000 ffff
+
+# Register 72
+rbase 72 180 20d0 48e1
+rbase 72 144 48e2 554a
+rbase 72 180 554b ffff
+
+# Register 74
+rbase 74 2480 365b 48dd
+rbase 74 2566 48de 5546
+rbase 74 249e 5547 ffff
+
+code    82000 82003
+word    8200e 8200f
+vect    82010 8201f         # cmd
+code    82020 820eb
+vect    820ec 82159
+code    8215a 8218a
+struct  8218b 821a8 : Y : W P 4 X N
+word    821cb 821d1
+word    821de 821df
+byte    821e0 821e3
+word    821e6 821e7
+word    821ee 821ef
+word    82206 82207
+word    8223e 8223f
+word    82250 82251
+code    822d0 823e9
+byte    82400 82403
+word    82404 82413
+byte    82414 82417
+word    82418 82423
+byte    82424 82425
+byte    8242d 8242d
+byte    8242f 82430
+word    82434 82435
+byte    82436 8243a
+byte    8243e 8243f
+word    82440 82441
+byte    82442 82449
+word    8244a 8244d
+byte    8244e 8244e
+byte    82453 8245b
+word    8245c 8245f
+word    82480 82485
+word    8248a 8248d
+word    8249c 8249f
+byte    824c8 824c8
+word    824ea 824ed
+byte    82500 82500
+byte    8250a 8250a
+byte    82516 8251b
+word    8251c 8251d
+byte    8251f 82521
+word    82522 8252f
+byte    82530 82531
+word    8253a 8253b
+byte    8253c 8253d
+word    8253e 8253f
+byte    82540 82548
+word    8254a 82551
+byte    82552 82555
+word    82556 82557
+word    82564 82567
+word    82584 82585
+byte    82586 82586
+byte    8258a 8258a
+word    825a2 825a5
+byte    825ad 825ae
+byte    825b0 825b1
+word    825b2 825b9
+byte    825ba 825bd
+word    825be 825c1
+byte    825c2 825c3
+word    825c4 825c5
+byte    825c6 825ca
+word    825cb 825cc
+word    825dc 825dd
+table   825e7 8262c  "Table1"  : Y X O 10 
+table   8262d 8267c  "Table2"  : Y X O 10 
+table   8267d 826cc  "Table3"  : Y X O 10 
+table   826cd 82704  "Table4"  : Y X O 7 
+table   82705 82754  "Table5"  : Y X O 10 
+table   82755 827a4  "Table6"  : Y X O 10 
+table   827a5 827f4  "Table7"  : Y X O 10 
+table   827f5 82844  "Table8"  : Y X O 10 
+table   82845 82871  "Table9"  : Y X O 5 
+byte    82872 82872
+byte    8287a 8287b
+func    828b8 828cb  "Fn703a_Sensor_Tfr"  : Y X : S Y X 
+func    828cc 828e3  "Func2"  : W X : W X 
+func    828e4 828f1  "Func3"  : Y X : Y X 
+func    828f2 82901  "Func4"  : Y X : Y X 
+func    82902 82913  "Func5"  : Y X : Y X 
+func    82914 8291b  "Func6"  : Y X : Y X 
+func    8291c 82921  "Func7"  : Y X : Y X 
+func    82922 8292d  "Func8"  : Y X : Y X 
+func    8292e 82937  "Func9"  : S Y X : Y X 
+func    82938 82941  "Func10"  : S Y X : Y X 
+func    82942 8294f  "Func11"  : Y X : Y X 
+func    82950 8295d  "Func12"  : Y X : Y X 
+func    8295e 82967  "Func13"  : Y X : Y X 
+func    82968 8296f  "Func14"  : S Y X : Y X 
+func    82970 8297b  "Func15"  : S Y X : Y X 
+func    8297c 82987  "Func16"  : Y X : Y X 
+func    82988 82997  "Func17"  : W X : W X 
+func    82998 829a3  "Func18"  : W X : W X 
+func    829a4 829b3  "Func19"  : S Y X : Y X 
+func    829b4 829bf  "Func20"  : S Y X : Y X 
+func    829c0 829c7  "Func21"  : Y X : Y X 
+func    829c8 829d3  "Func22"  : Y X : Y X 
+func    829d4 829dd  "Func23"  : Y X : Y X 
+func    829de 829e7  "Func24"  : Y X : Y X 
+func    829ea 829f5  "Func25"  : Y X : Y X 
+func    829f6 829fd  "Func26"  : S Y X : Y X 
+func    829fe 82a0b  "Func27"  : Y X : Y X 
+func    82a0c 82a15  "Func28"  : S Y X : Y X 
+func    82a16 82a1f  "Func29"  : Y X : Y X 
+func    82a20 82a25  "Func30"  : Y X : Y X 
+func    82a26 82a33  "Func31"  : Y X : Y X 
+func    82a34 82a39  "Func32"  : Y X : Y X 
+func    82a3a 82a41  "Func33"  : Y X : Y X 
+func    82a42 82a4b  "Func34"  : Y X : Y X 
+func    82a4c 82a53  "Func35"  : Y X : Y X 
+func    82a54 82a5b  "Func36"  : Y X : Y X 
+func    82a5c 82a67  "Func37"  : Y X : Y X 
+func    82a68 82a73  "Func38"  : Y X : Y X 
+func    82a74 82a7d  "Func39"  : Y X : Y X 
+func    82a7e 82a95  "Func40"  : W X : W X 
+func    82a96 82a9f  "Func41"  : Y X : Y X 
+func    82aa0 82aa9  "Func42"  : S Y X : Y X 
+func    82aaa 82ab5  "Func43"  : S Y X : Y X 
+func    82ab6 82abd  "Func44"  : Y X : Y X 
+func    82abe 82ad5  "Func45"  : S W X : W X 
+func    82ad6 82af1  "Func46"  : S W X : W X 
+func    82af2 82b01  "Func47"  : S Y X : Y X 
+func    82b02 82b0f  "Func48"  : Y X : Y X 
+func    82b10 82b1d  "Func49"  : Y X : Y X 
+vect    82b1e 82b2d
+code    82b2e 82ca0
+code    82ca8 82e84
+word    82e86 82e87
+code    82e8c 82ff3
+word    83002 83003
+code    83008 83169
+code    83177 83449
+code    8344d 8349e
+code    834a5 839b0
+word    839b2 839b3
+word    839b8 839b9
+code    839be 8462d
+code    846a8 84e13
+code    84e14 85061
+timerl  85062 850ce: W N 
+code    850cf 85188
+code    85196 851c4
+code    851cc 8536f
+code    85370 854e9
+code    854ea 85615
+word    855d6 855d7
+code    85616 85667
+code    8566a 85914
+code    85915 8591c
+code    85920 859bf
+code    859c0 859cd
+code    85a35 85dbb
+code    85dbc 85e4c
+code    85e4d 85e70
+code    85e72 85fc0
+fill    85fc1 8ffff
+
+
+
+
+# ------------ Subroutine list
+sub  82020  "Reset_All"
+sub  820b7  "Initialize"  
+sub  820bf  "Background_Loop"  
+sub  820da  "Set_Tasklist"  
+sub  8215a  "Read_AD"
+sub  822d0  "Sub5"  
+sub  8234f  "Sub6"  
+sub  82b2e  "Sub7"  
+sub  82b38  "Sub8"  
+sub  82bd5  "Sched_HSO"  
+sub  82c71  "Do_CmdN"  
+sub  82c81  "Sub11"  
+sub  82c98  "Sub12"  
+sub  82cab  "Sub13"  
+sub  82caf  "Sub14"  
+sub  82cd1  "Sub15"  
+sub  82cfc  "Sub16"  
+sub  82d18  "I_HSO_1"  
+sub  82dd3  "Sub17"  
+sub  82df4  "Sub18"  
+sub  82e5e  "I_HSI_0"  
+sub  82e71  "I_Timer_OVF"  
+sub  82e84  "I_Ignore"  
+sub  82e8c  "Sub19"  
+sub  82f9a  "Sub20"  
+sub  83008  "Sub21"  
+sub  83011  "Sub22"  
+sub  83177  "Sub23"  
+sub  83194  "Sub24"  
+sub  83257  "Sub25"  
+sub  8326e  "Sub26"  
+sub  8328c  "Sub27"  
+sub  83299  "Sub28"  
+sub  832a4  "Sub29"  
+sub  833c8  "Sub30"  
+sub  83422  "Sub31"  
+sub  83445  "USBFunLU1"   : F 1 32 Y U S
+sub  8344d  "SUBFunLU1"   : F 1 32 Y S U
+sub  83450  "UUBFunLU1"   : F 1 32 Y U U
+sub  8349a  "USWFunLU1"   : F 1 32 W U S
+sub  834a5  "UUWFunLU1"   : F 1 32 W U U
+sub  834ed  "Sub32"  
+sub  834f2  "Sub33"  
+sub  83523  "UTabLU1"   : F 2 38 34 Y U
+sub  8352d  "UTabLU2"   : F 2 38 34 Y U
+sub  8355f  "Sub34"  
+sub  83572  "Sub35"  
+sub  83593  "Sub36"  
+sub  835b8  "Set_RPM_Flags"  
+sub  8360f  "Sub38"  
+sub  8365b  "Update_AD"  
+sub  839be  "VE_Calc"  
+sub  83b21  "Sub41"  
+sub  83b96  "Sub42"  
+sub  83c1f  "Sub43"  
+sub  83d02  "Sub44"  
+sub  83d17  "Sub45"  
+sub  83db0  "Sub46"  
+sub  83dc8  "Sub47"  
+sub  83f80  "Sub48"  
+sub  84091  "Sub49"  
+sub  840a2  "Sub50"  
+sub  840d9  "Sub51"  
+sub  841dc  "Sub52"  
+sub  84282  "Sub53"  
+sub  842bc  "Sub54"  
+sub  843ac  "Sub55"  
+sub  843d9  "Sub56"  
+sub  8442a  "Update_Fpump"  
+sub  8443d  "Sub58"  
+sub  844d3  "Sub59"  
+sub  84505  "Sub60"  
+sub  846a8  "Sub61"  
+sub  84775  "Sub62"  
+sub  848bf  "Sub63"  
+sub  848c7  "Sub64"  
+sub  848d1  "Sub65"  
+sub  848da  "Sub66"  
+sub  84e14  "Sub67"  
+sub  84f03  "Sub68"  
+sub  84faf  "Sub69"  
+sub  850cf  "Sub70"  
+sub  8514e  "Sub71"  
+sub  85158  "Sub72"  
+sub  85196  "Sub73"  
+sub  851cc  "Sub74"  
+sub  852cf  "Sub75"  
+sub  852d9  "Sub76"  
+sub  85370  "Sub77"  
+sub  853e8  "Sub78"  
+sub  853ee  "Sub79"  
+sub  85501  "Get_Diag_Values"  
+sub  85526  "Set_Diag_Values"  
+sub  85547  "Sub82"  
+sub  85616  "Sub83"  
+sub  8574b  "Sub84"  : W N : Y N 
+sub  857e6  "Sub85"  
+sub  857f3  "Sub86"  
+sub  857fb  "Sub87"  
+sub  85805  "Sub88"  : Y 
+sub  8581e  "Sub89"  : W N 
+sub  85915  "Sub90"  : W N : W N 
+sub  859c0  "Sub91"  
+sub  85a35  "Sub92"  
+sub  85b8c  "Scale_Time_delta"
+sub  85b91  "Scale_Time_delta2"
+sub  85dbc  "Sub93"  
+sub  85ddd  "Sub94"  
+sub  85e00  "Sub95"  
+sub  85e41  "Sub96"  
+sub  85e44  "Sub97"  
+sub  85e72  "Check_Console"  
+sub  85ea6  "I_HSO_2"  
+sub  85eaa  "Sub99"  
+sub  85eb1  "Sub100"  
+sub  8d0a0  "Sub101"  
+
+
+# ------------ Symbol list ----
+sym 2  "LSO_Port"
+sym 2  "CPU_OK" :T 6 
+sym 3  "LIO_Port"
+sym 4  "AD_Low"
+sym 4  "AD_Cmd" :W
+sym 5  "AD_High"
+sym 5  "WDG_Timer" :W
+sym 6  "IO_Timer"
+sym 7  "IO_Timer_Hi"
+sym 8  "INT_Mask"
+sym 9  "INT_Pend"
+sym a  "IO_Status"
+sym a  "HSO_OVF" :T 0 
+sym a  "HSI_OVF" :T 1 
+sym a  "HSI_Ready" :T 2 
+sym a  "AD_Ready" :T 3 
+sym a  "INT_Service" :T 4 
+sym a  "INT_Priority" :T 5 
+sym b  "HSI_Sample"
+sym c  "HSI_Mask"
+sym d  "HSI_Data"
+sym d  "HSO_Cmd" :W
+sym e  "HSI_Time"
+sym e  "HSO_Time" :W
+sym f  "HSI_Time_Hi"
+sym f  "HSO_Time_Hi" :W
+sym 10  "STACK"
+sym 12  "Tmr_OVF_cnt"
+sym 14  "HSO_IPEND2"
+sym 16  "HSO_IMASK2"
+sym 17  "LSSI_B"
+sym 18  "HSO_STATE"
+sym 19  "LSSO_C"
+sym 1a  "HSI_MODE"
+sym 1c  "HSO_TIMEC"
+sym 1d  "LSSI_D"
+sym 1e  "HSO_LSLOT"
+sym 7a  "Rtab"
+sym 90  "TPtr"
+sym 92  "Bg_Point"
+sym 94  "HSO_TIMEC"
+sym bc  "ECT"
+sym bd  "ACT"
+sym c1  "RPMx4"
+sym 108 "ECT_Raw"
+sym 10a "ACT_Raw"
+sym 13a "Tstall"
+sym 16c "Viplatm"
+#sym 1dc  "Occsav"
+#sym 1de  "Viplatm"
+sym 16e "Vip_nrm_ex"
+sym 170  "Vip_nrm2_EX"
+sym 172  "Shift_cnt_ex"
+sym 174  "Code_ones_ex"
+sym 177  "Vip_timer_ex"
+sym 17f  "Mphtim1H"
+sym 184  "HSOQ"
+sym 1da  "Code_cnt_ex"
+sym 1dc  "Vip_stack_ex"
+sym 1de  "Vip_stack_x2"
+sym 1e2  "Vip_cnt_ex"
+sym 21cc "HSOTable"
+sym 2464 "REQV" # Lambse Rich Limit
+sym 2466 "LEQV" # Lambse Lean Limit
+sym 2484 "ACT_Max"
+sym 2482 "ACT_Min"
+sym 249c "ECT_Min"
+sym 249e "ECT_Max"
+
+# Bits
+sym 28  "Flags_28"
+sym 28  "Egren" :T 0 
+sym 28  "Ptpflg" :T 1 
+sym 28  "Newsa" :T 2 
+sym 28  "Efflg1" :T 3 
+sym 28  "Ramp_rich" :T 4 
+sym 28  "Egoste" :T 5 
+sym 28  "Fpwq3" :T 6 
+sym 28  "Kam_error" :T 7
+sym  2c "Adptmr_On" : T +0
+sym  2c "Idleq" : T +1
+sym  2c "Undsp" : T +2
+sym  2c "Dmflg" : T +3
+sym  2c "Egonflg" : T +4
+sym  2c "Purging" : T +5
+sym  2c "Cttmr_On" : T +6
+sym  2c "Cranking" : T +7
+sym  2c "Flags_2c"
+SYM  46 "Scvac" : T 0
+SYM  46 "Dol" : T 1
+SYM  46 "Evr" : T 2
+SYM  46 "Isc" : T 3
+SYM  46 "Scvnt" : T 4
+SYM  46 "Sto_state" : T 5
+SYM  46 "WOT_AC" : T 6
+SYM  46 "Pump" : T 7
+SYM  46 "IO_Port_State"
+
+
+------ END Disassembly run ------
+

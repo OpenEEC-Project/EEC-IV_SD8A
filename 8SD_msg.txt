@@ -1,0 +1,541 @@
+
+ ----------------------------
+ SAD Version 3.08
+ ----------------------------
+
+ --- Input file = 'C:\Users\Anthony\sad\Windows\8SD.bin'. It is 57344 (0xe000) bytes
+File appears to be 1 banks
+
+-----------Signatures---------[5]--
+d ofst  end    k    name      pars
+0 22002 22006  2    INIT      0,220b9,    0,    1,    0,    0,    0,    0,    0,    0,fffffffe,    0,    0,22002,22006,    0,
+0 23001 23005  2    INIT      0,220b8,    0,    1,    5,    0,    5,    0,    0,    0,ffffffff,    0,    0,22001,22005,    0,
+0 24000 24004  2    INIT      0,220b7,    0,    1,    8,    7,    8,    7,    0,    0,    0,    0,    0,22000,22004,    0,
+0 25000 25003  1    INIT      0,220b6,    0,    1,    4,    0,    4,    0,    0,    0,    1,    0,    0,22000,22003,    0,
+0 26000 26002  0    INIT      0,220b5,    0,    1,    7,    0,    7,    0,    0,    0,    2,    0,    0,22000,22002,    0,
+
+
+
+ --- Read commands from directive file = C:\Users\Anthony\sad\Windows\8SD_dir.txt
+------ END Disassembly run ------
+
+      ^ Invalid Command
+
+
+ --- Start Disassembly -----
+
+
+ --- Outputting Listing to C:\Users\Anthony\sad\Windows\8SD_lst.txt------------
+
+Invalid opcode at 855b2
+Invalid opcode at 85619
+Invalid opcode at 8561d
+Invalid opcode at 858d0
+Invalid opcode at 85ab2
+Invalid opcode at 85c24
+Invalid opcode at 85c5c
+Invalid opcode at 85ca3
+Invalid opcode at 85ce3
+Invalid opcode at 85ce7
+Invalid opcode at 85d72
+Invalid opcode at 85d73
+Invalid opcode at 85d7a
+Invalid opcode at 85d83
+Invalid opcode at 85d84
+Invalid opcode at 85d96
+Invalid opcode at 85d9d
+
+
+---------------------------------------------------------------------------------------------
+The disassembler has scanned the binary and arrived at the following final command list.
+This list is not guaranteed to be perfect, but should be a good basic start.
+This following list can be copied and pasted into a dir file.  ( #cmd = user command/directive)
+---------------------------------------------------------------------------------------------
+
+
+opts   :C G N P S 
+
+bank 8      0   dfff
+
+rbase 20 82418  8360f 83b95       # cmd
+rbase 20 82434  83b96 841db       # cmd
+rbase 20 8244c  841dc 84774       # cmd
+rbase 20 8252e  84775 84e13       # cmd
+rbase 20 825cb  84e14 85eb0       # cmd
+rbase 20 82556  85eb1 8ffff       # cmd
+rbase 22 bbf       # cmd
+rbase 30 8218b  8215a 83b99       # cmd
+rbase 30 82424  83b9a 844d5       # cmd
+rbase 30 8251c  844d6 84fb3       # cmd
+rbase 30 85062  84fb4 8ffff       # cmd
+rbase 72 180  820d0 848e1       # cmd
+rbase 72 144  848e2 8554a       # cmd
+rbase 72 180  8554b 8ffff       # cmd
+rbase 74 82480  8365b 848dd       # cmd
+rbase 74 82566  848de 85546       # cmd
+rbase 74 8249e  85547 8ffff       # cmd
+
+code    82000 82003         # cmd
+word    8200c 8200f         # cmd
+vect    82010 8201f         # cmd
+code    82020 820eb         # cmd
+vect    820ec 82159         # cmd
+code    8215a 8218a         # cmd
+struct  8218b 821a8: Y : W P 4 X N          # cmd
+vect    821aa 821c9
+code    821ca 821ca
+byte    821cb 821d1         # cmd
+vect    821d4 821d5
+word    821d6 821d7
+vect    821dc 821dd
+word    821de 821df         # cmd
+byte    821e0 821e3         # cmd
+vect    821e4 821e5
+word    821e6 821e7         # cmd
+word    821ee 821ef         # cmd
+word    82200 82201
+word    82206 82207         # cmd
+word    82210 82211
+word    8221c 8221d
+word    82222 82223
+word    82226 82227
+word    8222c 8222d
+word    8223e 8223f         # cmd
+word    82244 82245
+word    82250 82253         # cmd
+byte    82254 82254
+word    8227c 8227d
+code    822d0 823e9         # cmd
+byte    82400 82403         # cmd
+word    82404 82413         # cmd
+byte    82414 82417         # cmd
+word    82418 82423         # cmd
+byte    82424 82425         # cmd
+byte    82427 8242b
+byte    8242c 8242d         # cmd
+byte    8242e 82430         # cmd
+word    82432 82435         # cmd
+byte    82436 8243c         # cmd
+byte    8243d 8243f         # cmd
+word    82440 82441         # cmd
+byte    82442 82449         # cmd
+word    8244a 8244d         # cmd
+byte    8244e 82451         # cmd
+byte    82452 8245b         # cmd
+word    8245c 82461         # cmd
+word    82464 82467
+word    8246c 8246d
+word    82470 82471
+word    82474 82475
+word    82480 82485         # cmd
+byte    82486 82486
+word    8248a 8248d         # cmd
+byte    8248e 8248e
+byte    82494 82494
+word    82498 82499
+word    8249c 8249f         # cmd
+byte    824b4 824b5
+word    824b6 824bb
+byte    824c8 824c9         # cmd
+word    824ce 824cf
+byte    824d3 824d4
+word    824d8 824d9
+byte    824e4 824e4
+word    824e6 824e7
+word    824e8 824ed         # cmd
+word    824f4 824f5
+byte    824fc 824fc
+word    824fe 824ff
+byte    82500 82500         # cmd
+byte    8250a 8250a         # cmd
+word    82514 82515
+byte    82516 8251b         # cmd
+word    8251c 8251d         # cmd
+byte    8251f 82521         # cmd
+word    82522 8252f         # cmd
+byte    82530 82538         # cmd
+word    8253a 8253b         # cmd
+byte    8253c 8253d         # cmd
+word    8253e 8253f         # cmd
+byte    82540 82548         # cmd
+word    8254a 82551         # cmd
+byte    82552 82555         # cmd
+word    82556 82557         # cmd
+byte    82558 82558
+word    8255a 82561
+word    82562 82581         # cmd
+word    82582 82585         # cmd
+byte    82586 82588         # cmd
+byte    82589 8258b         # cmd
+word    8258c 8258d
+byte    8258e 8258e
+word    82590 8259f
+word    825a0 825ab         # cmd
+byte    825ac 825ae         # cmd
+byte    825af 825b1         # cmd
+word    825b2 825b9         # cmd
+byte    825ba 825bd         # cmd
+word    825be 825c1         # cmd
+byte    825c2 825c3         # cmd
+word    825c4 825c5         # cmd
+byte    825c6 825ca         # cmd
+word    825cb 825cc         # cmd
+word    825ce 825cf
+byte    825d0 825d4
+word    825d6 825d9
+byte    825da 825da
+word    825dc 825e5         # cmd
+byte    825e6 825e6
+table   825e7 8262c  "Table1"  : Y X O 10          # cmd
+table   8262d 8267c  "Table2"  : Y X O 10          # cmd
+table   8267d 826cc  "Table3"  : Y X O 10          # cmd
+table   826cd 82704  "Table4"  : Y X O 7          # cmd
+table   82705 82754  "Table5"  : Y X O 10          # cmd
+table   82755 827a4  "Table6"  : Y X O 10          # cmd
+table   827a5 827f4  "Table7"  : Y X O 10          # cmd
+table   827f5 82844  "Table8"  : Y X O 10          # cmd
+table   82845 82871  "Table9"  : Y X O 5          # cmd
+byte    82872 82872         # cmd
+byte    8287a 8287b         # cmd
+byte    828a5 828a5
+func    828b8 828cb  "Fn703a_Sensor_Tfr"  : Y X : S Y X          # cmd
+func    828cc 828e3  "Func2"  : W X : W X          # cmd
+func    828e4 828f1  "Func3"  : Y X : Y X          # cmd
+func    828f2 82901  "Func4"  : Y X : Y X          # cmd
+func    82902 82913  "Func5"  : Y X : Y X          # cmd
+func    82914 8291b  "Func6"  : Y X : Y X          # cmd
+func    8291c 82921  "Func7"  : Y X : Y X          # cmd
+func    82922 8292d  "Func8"  : Y X : Y X          # cmd
+func    8292e 82937  "Func9"  : S Y X : Y X          # cmd
+func    82938 82941  "Func10"  : S Y X : Y X          # cmd
+func    82942 8294f  "Func11"  : Y X : Y X          # cmd
+func    82950 8295d  "Func12"  : Y X : Y X          # cmd
+func    8295e 82967  "Func13"  : Y X : Y X          # cmd
+func    82968 8296f  "Func14"  : S Y X : Y X          # cmd
+func    82970 8297b  "Func15"  : S Y X : Y X          # cmd
+func    8297c 82987  "Func16"  : Y X : Y X          # cmd
+func    82988 82997  "Func17"  : W X : W X          # cmd
+func    82998 829a3  "Func18"  : W X : W X          # cmd
+func    829a4 829b3  "Func19"  : S Y X : Y X          # cmd
+func    829b4 829bf  "Func20"  : S Y X : Y X          # cmd
+func    829c0 829c7  "Func21"  : Y X : Y X          # cmd
+func    829c8 829d3  "Func22"  : Y X : Y X          # cmd
+func    829d4 829dd  "Func23"  : Y X : Y X          # cmd
+func    829de 829e7  "Func24"  : Y X : Y X          # cmd
+func    829ea 829f5  "Func25"  : Y X : Y X          # cmd
+func    829f6 829fd  "Func26"  : S Y X : Y X          # cmd
+func    829fe 82a0b  "Func27"  : Y X : Y X          # cmd
+func    82a0c 82a15  "Func28"  : S Y X : Y X          # cmd
+func    82a16 82a1f  "Func29"  : Y X : Y X          # cmd
+func    82a20 82a25  "Func30"  : Y X : Y X          # cmd
+func    82a26 82a33  "Func31"  : Y X : Y X          # cmd
+func    82a34 82a39  "Func32"  : Y X : Y X          # cmd
+func    82a3a 82a41  "Func33"  : Y X : Y X          # cmd
+func    82a42 82a4b  "Func34"  : Y X : Y X          # cmd
+func    82a4c 82a53  "Func35"  : Y X : Y X          # cmd
+func    82a54 82a5b  "Func36"  : Y X : Y X          # cmd
+func    82a5c 82a67  "Func37"  : Y X : Y X          # cmd
+func    82a68 82a73  "Func38"  : Y X : Y X          # cmd
+func    82a74 82a7d  "Func39"  : Y X : Y X          # cmd
+func    82a7e 82a95  "Func40"  : W X : W X          # cmd
+func    82a96 82a9f  "Func41"  : Y X : Y X          # cmd
+func    82aa0 82aa9  "Func42"  : S Y X : Y X          # cmd
+func    82aaa 82ab5  "Func43"  : S Y X : Y X          # cmd
+func    82ab6 82abd  "Func44"  : Y X : Y X          # cmd
+func    82abe 82ad5  "Func45"  : S W X : W X          # cmd
+func    82ad6 82af1  "Func46"  : S W X : W X          # cmd
+func    82af2 82b01  "Func47"  : S Y X : Y X          # cmd
+func    82b02 82b0f  "Func48"  : Y X : Y X          # cmd
+func    82b10 82b1d  "Func49"  : Y X : Y X          # cmd
+vect    82b1e 82b2d         # cmd
+code    82b2e 82ca0         # cmd
+code    82ca8 82e84         # cmd
+word    82e86 82e87         # cmd
+code    82e8c 83000         # cmd
+word    83002 83003         # cmd
+code    83008 83169         # cmd
+code    83177 83449         # cmd
+code    8344d 8349e         # cmd
+code    834a5 839b0         # cmd
+word    839b2 839b3         # cmd
+word    839b8 839b9         # cmd
+code    839be 8469c         # cmd
+code    846a8 85061         # cmd
+timerl  85062 850ce: W N          # cmd
+code    850cf 85192         # cmd
+code    85193 851c4         # cmd
+code    851c5 85667         # cmd
+code    8566a 8591c         # cmd
+code    8591d 859cd         # cmd
+code    85a32 85e70         # cmd
+code    85e72 85fc0         # cmd
+fill    85fc1 8ffff         # cmd
+
+
+
+
+# ------------ Subroutine list
+sub  82020  "Reset_All"  
+sub  820b7  "Initialize"  
+sub  820bf  "Background_Loop"  
+sub  820da  "Set_Tasklist"  
+sub  8215a  "Read_AD"  
+sub  821ca  "Sub1"  
+sub  822d0  "Sub5"  
+sub  8234f  "Sub6"  
+sub  8246e  "Sub2"  
+sub  82b2e  "Sub7"  
+sub  82b38  "Sub8"  
+sub  82bd5  "Sched_HSO"  
+sub  82c71  "Do_CmdN"  
+sub  82c81  "Sub11"  
+sub  82c98  "Sub12"  
+sub  82cab  "Sub13"  
+sub  82caf  "Sub14"  
+sub  82cd1  "Sub15"  
+sub  82cfc  "Sub16"  
+sub  82d18  "I_HSO_1"  
+sub  82dd3  "Sub17"  
+sub  82df4  "Sub18"  
+sub  82e5e  "I_HSI_0"  
+sub  82e71  "I_Timer_OVF"  
+sub  82e84  "I_Ignore"  
+sub  82e8c  "Sub19"  
+sub  82f9a  "Sub20"  
+sub  82ff4  "Sub3"  
+sub  83008  "Sub21"  
+sub  83011  "Sub22"  
+sub  83177  "Sub23"  
+sub  8318c  "Sub4"  
+sub  83194  "Sub24"  
+sub  83257  "Sub25"  
+sub  8326e  "Sub26"  
+sub  8328c  "Sub27"  
+sub  83299  "Sub28"  
+sub  832a4  "Sub29"  
+sub  833c8  "Sub30"  
+sub  83422  "Sub31"  
+sub  83445  "USBFunLU1"   : F 1 32 Y U U : F 1 32 Y U U            # by cmd
+sub  8344d  "SUBFunLU1"   : F 1 32 Y U U : F 1 32 Y U U            # by cmd
+sub  83450  "UUBFunLU1"   : F 1 32 Y U U            # by cmd
+sub  8349a  "USWFunLU1"   : F 1 32 W U U : F 1 32 W U U            # by cmd
+sub  834a5  "UUWFunLU1"   : F 1 32 W U U            # by cmd
+sub  834ed  "Sub32"  
+sub  834f2  "Sub33"  
+sub  83523  "UTabLU1"   : F 2 38 34 Y U : F 2 38 34 W U : F 2 38 34 W U            # by cmd
+sub  8352d  "UTabLU2"   : F 2 38 34 W U            # by cmd
+sub  8355f  "Sub34"  
+sub  83572  "Sub35"  
+sub  83593  "Sub36"  
+sub  835b8  "Set_RPM_Flags"  
+sub  8360f  "Sub38"  
+sub  8365b  "Update_AD"  
+sub  839be  "VE_Calc"  
+sub  83b21  "Sub41"  
+sub  83b96  "Sub42"  
+sub  83c1f  "Sub43"  
+sub  83d02  "Sub44"  
+sub  83d17  "Sub45"  
+sub  83db0  "Sub46"  
+sub  83dc8  "Sub47"  
+sub  83f80  "Sub48"  
+sub  84091  "Sub49"  
+sub  840a2  "Sub50"  
+sub  840d9  "Sub51"  
+sub  841dc  "Sub52"  
+sub  84282  "Sub53"  
+sub  842bc  "Sub54"  
+sub  843ac  "Sub55"  
+sub  843d9  "Sub56"  
+sub  8442a  "Update_Fpump"  
+sub  8443d  "Sub58"  
+sub  844d3  "Sub59"  
+sub  84505  "Sub60"  
+sub  8462e  "Sub5"  
+sub  846a8  "Sub61"  
+sub  84775  "Sub62"  
+sub  848bf  "Sub63"  
+sub  848c7  "Sub64"  
+sub  848d1  "Sub65"  
+sub  848da  "Sub66"  
+sub  84e14  "Sub67"  
+sub  84f03  "Sub68"  
+sub  84faf  "Sub69"  
+sub  850cf  "Sub70"  
+sub  8514e  "Sub71"  
+sub  85158  "Sub72"  
+sub  85189  "Sub6"  
+sub  85196  "Sub73"  
+sub  851c5  "Sub7"  
+sub  851cc  "Sub74"  
+sub  852cf  "Sub75"  
+sub  852d9  "Sub76"  
+sub  852e3  "Sub8"  
+sub  85370  "Sub77"  
+sub  853e8  "Sub78"  
+sub  853ee  "Sub79"  
+sub  85405  "Sub9"  
+sub  8541c  "Sub10"  
+sub  854d4  "Sub11"  
+sub  85501  "Get_Diag_Values"  
+sub  85526  "Set_Diag_Values"  
+sub  85547  "Sub82"  
+sub  85616  "Sub83"  
+sub  8574b  "Sub84"  : W N : Y N             # by cmd
+sub  857e6  "Sub85"  
+sub  857f3  "Sub86"  
+sub  857fb  "Sub87"  
+sub  85805  "Sub88"  : Y             # by cmd
+sub  8581e  "Sub89"  : W N             # by cmd
+sub  85915  "Sub90"  : W N : W N             # by cmd
+sub  8591d  "Sub12"  
+sub  859c0  "Sub91"  
+sub  85a32  "Sub13"  
+sub  85a35  "Sub92"  
+sub  85a43  "Sub14"  
+sub  85a5a  "Sub15"  
+sub  85ae4  "Sub16"  
+sub  85b03  "Sub17"  
+sub  85b39  "Sub18"  
+sub  85b4e  "Sub19"  
+sub  85b62  "Sub20"  
+sub  85b67  "Sub21"  
+sub  85b8c  "Scale_Time_delta"  
+sub  85b91  "Scale_Time_delta2"  
+sub  85bc8  "Sub22"  
+sub  85bcd  "Sub23"  
+sub  85bd9  "Sub24"  
+sub  85c01  "Sub25"  
+sub  85c30  "Sub26"  
+sub  85da0  "Sub27"  
+sub  85dbc  "Sub93"  
+sub  85ddd  "Sub94"  
+sub  85e00  "Sub95"  
+sub  85e41  "Sub96"  
+sub  85e44  "Sub97"  
+sub  85e72  "Check_Console"  
+sub  85ea6  "I_HSO_2"  
+sub  85eaa  "Sub99"  
+sub  85eb1  "Sub100"  
+sub  8606b  "Sub28"  
+sub  860f1  "Sub29"  
+sub  8d0a0  "Sub101"  
+
+
+# ------------ Symbol list ----
+sym 1  "Timer2U_S"
+sym 1  "Timer1U_mS" :T 24 
+sym 1  "Timer10U_mS" :T 25 
+sym 1  "Timer16U_mS" :T 26 
+sym 1  "Timer5U_mS" :T 27 
+sym 1  "Timer15U_8thS" :T 56 
+sym 1  "Timer9U_8thS" :T 57 
+sym 1  "Timer17U_8thS" :T 58 
+sym 1  "Timer25D_8thS" :T 61 
+sym 1  "Timer4U_S" :T 120 
+sym 1  "Timer3U_S" :T 121 
+sym 1  "Timer12U_S" :T 123 
+sym 1  "Timer8D_S" :T 125 
+sym 2  "LSO_Port"
+sym 2  "CPU_OK" :T 6 
+sym 3  "LIO_Port"
+sym 4  "AD_Low"
+sym 4  "AD_Cmd" :W
+sym 4  "AD_Cmd" :T 0 
+sym 5  "AD_High"
+sym 5  "WDG_Timer" :W
+sym 5  "WDG_Timer" :T 0 
+sym 6  "IO_Timer"
+sym 7  "IO_Timer_Hi"
+sym 8  "INT_Mask"
+sym 9  "INT_Pend"
+sym a  "IO_Status"
+sym a  "HSO_OVF" :T 0 
+sym a  "HSI_OVF" :T 1 
+sym a  "HSI_Ready" :T 2 
+sym a  "AD_Ready" :T 3 
+sym a  "INT_Service" :T 4 
+sym a  "INT_Priority" :T 5 
+sym b  "HSI_Sample"
+sym c  "HSI_Mask"
+sym d  "HSI_Data"
+sym d  "HSO_Cmd" :W
+sym d  "HSO_Cmd" :T 0 
+sym e  "HSI_Time"
+sym e  "HSO_Time" :W
+sym e  "HSO_Time" :T 0 
+sym f  "HSI_Time_Hi"
+sym f  "HSO_Time_Hi" :W
+sym f  "HSO_Time_Hi" :T 0 
+sym 10  "STACK"
+sym 12  "Tmr_OVF_cnt"
+sym 14  "HSO_IPEND2"
+sym 16  "HSO_IMASK2"
+sym 17  "LSSI_B"
+sym 18  "HSO_STATE"
+sym 19  "LSSO_C"
+sym 1a  "HSI_MODE"
+sym 1c  "HSO_TIMEC"
+sym 1d  "LSSI_D"
+sym 1e  "HSO_LSLOT"
+sym 28  "Flags_28"
+sym 28  "Egren" :T 0 
+sym 28  "Ptpflg" :T 1 
+sym 28  "Newsa" :T 2 
+sym 28  "Efflg1" :T 3 
+sym 28  "Ramp_rich" :T 4 
+sym 28  "Egoste" :T 5 
+sym 28  "Fpwq3" :T 6 
+sym 28  "Kam_error" :T 7 
+sym 2c  "Flags_2c"
+sym 2c  "Adptmr_On" :T 0 
+sym 2c  "Idleq" :T 1 
+sym 2c  "Undsp" :T 2 
+sym 2c  "Dmflg" :T 3 
+sym 2c  "Egonflg" :T 4 
+sym 2c  "Purging" :T 5 
+sym 2c  "Cttmr_On" :T 6 
+sym 2c  "Cranking" :T 7 
+sym 46  "IO_Port_State"
+sym 46  "Scvac" :T 0 
+sym 46  "Dol" :T 1 
+sym 46  "Evr" :T 2 
+sym 46  "Isc" :T 3 
+sym 46  "Scvnt" :T 4 
+sym 46  "Sto_state" :T 5 
+sym 46  "WOT_AC" :T 6 
+sym 46  "Pump" :T 7 
+sym 7a  "Rtab"
+sym 90  "TPtr"
+sym 92  "Bg_Point"
+sym 94  "HSO_TIMEC"
+sym bc  "ECT"
+sym bd  "ACT"
+sym c1  "RPMx4"
+sym 108  "ECT_Raw"
+sym 10a  "ACT_Raw"
+sym 13a  "Tstall"
+sym 16c  "Viplatm"
+sym 16e  "Vip_nrm_ex"
+sym 170  "Vip_nrm2_EX"
+sym 172  "Shift_cnt_ex"
+sym 174  "Code_ones_ex"
+sym 177  "Vip_timer_ex"
+sym 17f  "Mphtim1H"
+sym 184  "HSOQ"
+sym 1da  "Code_cnt_ex"
+sym 1dc  "Vip_stack_ex"
+sym 1de  "Vip_stack_x2"
+sym 1e2  "Vip_cnt_ex"
+sym 21cc  "HSOTable"
+sym 2464  "REQV"
+sym 2466  "LEQV"
+sym 2482  "ACT_Min"
+sym 2484  "ACT_Max"
+sym 249c  "ECT_Min"
+sym 249e  "ECT_Max"
+
+
+
+------ END Disassembly run ------
+
